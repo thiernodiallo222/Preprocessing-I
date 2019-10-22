@@ -1,7 +1,7 @@
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -17,156 +17,231 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+height: 100%;
 }
 html{
-	font-size: 62.5%;
+font-size: 62.5%;
 }
 // Adding google fonts
-	// Declaring a font size variable
-	@font-size: 1.5rem;
-	@bigger-font: 3rem;
-	@max-font-font: 5rem;
-	@color: blue;
+// Declaring a font size variable
+@line-below: 1px dotted gray;
+@smaller-font: 1.5rem;
+@medium-font: 2.5rem;
+@bigger-font: 3rem;
+@max-font: 5rem;
+@color: black;
 // The two mixins
-	.nav-footer-styling(){
-    display: flex;
-	padding: 30px;
-	}
+.nav-footer-styling(){
+display: flex;
+padding: 20px;
+font-size: @medium-font;
+}
 .hover-style(){
-    color: white;
-	background: @color;
-	font-size: @bigger-font;
+color: white;
+background: @color;
+font-size: @bigger-font;
 }
-		
+
 body{
-	display: flex;
-	flex-direction: column;
-	font-size: @font-size;
-	margin: 3%;
+display: flex;
+flex-direction: column;
+font-size: @smaller-font;
+margin: 3%;
 
-	
-	@line-below: 1px dotted gray;
-	font-family: 'Exo 2', sans-serif;
-	font-family: 'Dancing Script', cursive;
-	font-family: 'Work Sans', sans-serif;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Work Sans', sans-serif;
 
-	
-.resume-title{
-	display: flex;
-	justify-content: center;
-	font-size: 3rem;
-	color: @color;
-	font-size: @bigger-font;
-}
+
+// .resume-title{
+// display: flex;
+// justify-content: center;
+// font-size: 3rem;
+// color: @color;
+// font-size: @bigger-font;
+
+// @media(max-width: 500px){
+// 	font-size: 2rem;
+// 	color: blue;
+// }
+// }
 nav{
-	// display: flex;
-	.nav-footer-styling();
-	width: 100%;
-	justify-content: flex-end;
-	a{
-		align-items: baseline;
-		margin: 20px;
-	} // anchor tag closes here 
-	a:hover{
-	.hover-style();
-	}
+// display: flex;
+.nav-footer-styling();
+width: 100%;
+justify-content: flex-end;
+font-size: @medium-font;
+
+
+
+@media(max-width: 500px){
+font-size: @bigger-font;
+color: blue;
+flex-direction: column;
+align-items: center;
+text-decoration: underline;
+}
+a{
+align-items: baseline;
+margin: 1%;
+text-decoration: none;
+} // anchor tag closes here 
+a:hover{
+.hover-style();
+      }
 } // nav tag closes here 
 
 .grand-parent-container{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	background: rgb(244, 245, 240);
-	.parent-container-photo{
-		margin: 20px;
-		#my-photo{
-		width: 350px;
-		height: 300px;
-		} // closes my-photo img
+width: 100%;
+display: flex;
+flex-direction: column;
+background: rgb(244, 245, 240);
+.parent-container-photo{
+margin: 20px;
+#my-photo{
+height: 350px;
+width: 350px;
 
-	} // closes parent-container-photo
+@media(max-width: 500px){
+height: 250px;
+width: 250px;
+justify-content: center;
+align-items: center;
+}
+} // closes my-photo img
+
+} // closes parent-container-photo
 .my-name{
-	font-family: 'Exo 2', sans-serif;
-	font-size: @max-font-font;
-	margin: 15px;
-	color: @color;
+font-family: 'Exo 2', sans-serif;
+font-size: @max-font;
+margin: 15px;
+color: @color;
+@media(max-width: 500px){
+font-size: @bigger-font;
+color: blue;
+}  // closes media 500 px
+
 }// closes my-name selector
 .my-sentence{
-	margin: 10px;
-	font-family: 'Exo 2', sans-serif;
-	font-family: 'Dancing Script', cursive;
-	font-size: 2.5rem;
-}
+margin: 10px;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-size: 2.5rem;
+color: blue;
+
+@media(max-width: 500px){
+font-size: @font-size;
+color: green;
+  } // closes media 500px
+} // closes my sentence selector
+
 } // closes grand-parent-container
+
 .parent-container{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-  .p-title{
-       width: fit-content;
-	  font-size: @bigger-font;
-	  margin: 5px;
-	  color: @color;
-  }
-  .p-title:hover{
-	  .hover-style();
-  }
-	.sections{
-	 border: @line-below;
-	 width: 49.5%;
-	 margin-top:10px; ;
-	 padding: 5px;
-	 font-size: @font-size;
-	} // section tag closes here
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+@media(max-width: 500px){
+font-size: 2rem;
+width: 94%;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+}  // closes media 500 px
+
+.p-title{
+width: fit-content;
+font-size: @bigger-font;
+margin: 5px;
+color: @color;
+
+@media(max-width: 500px){
+width: 94%;
+font-size: 3rem;
+} //closes media 500px
+
+}// closes p-title
+.p-title:hover{
+.hover-style();
+}  //closes hover
+
+.sections{
+border: @line-below;
+width: 49.5%;
+margin-top:10px; ;
+padding: 5px;
+font-size: @medium-font;
+
+@media(max-width: 500px){
+width: 94%;
+font-size: 1.5rem;
+flex-direction: column;
+padding: 2%;
+border: none;
+border-bottom: @line-below;
+} //closes media 500 px
+
+} // section tag closes here
+
 } // parent tag closes here 
- 
+
 footer{
-	.nav-footer-styling();
-	justify-content: center;
-	background: rgb(240, 246, 250);
-	margin-top: 10px;
-	a{
-	 margin: 10px;
-	}
-}
+.nav-footer-styling();
+justify-content: center;
+background: rgb(240, 246, 250);
+margin-top: 10px;
+font-size: @medium-font;
+
+@media(max-width: 500px){
+font-size: @bigger-font;
+color: blue;
+flex-direction: column;
+align-items: center;
+} // closes media
+a{
+margin: 10px;
+} // closes anchor tag
+
+} // closes footer tag
 } // body tag closes here 
 
 
@@ -205,25 +280,3 @@ footer{
 
 
 
-/*
-## Task 3: Project Objectives
-
-* [ ] Review the [example resume](resume-example.png).  Notice how simplistic the example resume is.  Develop a simple layout of your choosing. If you are struggling to be creative, you may use the example resume as your design file. 
-**Note: you are only required to build one page, anything more than that would be stretch.**
-* [ ] The resume content will be provided by you. The content can be about you or a fictional character.  
-* [ ] Content: Navigation - Build a simple navigation with 4 items of your choosing
-* [ ] Content: Intro - Have a short introduction as to why you would be a good hire
-* [ ] Content: Skills - Showcase a list of skills you have somewhere on your resume
-* [ ] Content: Work History - Showcase your work history somewhere on your resume
-* [ ] Content: Contact - Provide some way a potential employer could contact you.  Phone number, email, or a full on contact form (doesn't have to work)
-* [ ] Variables: Incorporate variables in your project for color and font stacks.  
-* [ ] Nesting: Every selector should be nested inside the main container.  Avoid having global styles unless they are element level.
-* [ ] Mixins: Create 2 mixins of your choosing. Hint: It's super helpful to use flexbox properties in mixins
-* [ ] Mobile: Use nested-at rules to provide a mobile version of your resume.  Use `500px` as a `max-width` for mobile. 
-
-## Stretch Goals: 
-* [ ] Incorporate a google font of your choosing
-* [ ] Convert the great idea CSS into LESS.  Introduce variables, mixins, nesting, etc. 
-* [ ] Create a link to the portfolio page and create a layout that would allow users to see your work.  A good idea is to link projects back to their github repos so employers can see your code.
-
-*/ 
