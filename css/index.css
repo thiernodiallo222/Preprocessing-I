@@ -149,6 +149,7 @@ body {
 body nav {
   display: flex;
   padding: 20px;
+  color: black;
   width: 100%;
   justify-content: flex-end;
   font-size: 2rem;
@@ -166,11 +167,12 @@ body nav a {
   align-items: baseline;
   margin: 1%;
   text-decoration: none;
-  background: #13c749;
+  background: lightgray;
   border-radius: 12px;
   width: fit-content;
   height: fit-content;
   padding: 2%;
+  color: rgba(196, 18, 18, 0.932);
 }
 body nav a:hover {
   color: white;
@@ -276,6 +278,7 @@ body .parent-container .sections {
 body #the-footer {
   display: flex;
   padding: 20px;
+  color: black;
   justify-content: center;
   background: #eeeff0;
   margin-top: 10px;
@@ -291,4 +294,5 @@ body #the-footer {
 }
 body #the-footer a {
   margin: 10px;
+  color: black;
 }
