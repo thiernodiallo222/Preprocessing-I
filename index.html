@@ -2,11 +2,20 @@
 
 <html lang="en">
 <head>
+  <!-- adding google font -->
+<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Exo+2|Work+Sans&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Exo+2&display=swap" 
+rel="stylesheet">
+
   <meta charset="utf-8">
 
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +23,87 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <h1 class ="resume-title">My Resume</h1>
+  <header>
+    <nav>
+      <a href ="#Introduction">Introduction</a>
+      <a href ="#Skills">Skills</a>
+      <a href ="#Work-history">Work History</a>
+      <a href ="#Contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class ="grand-parent-container">
+    <div class ="parent-container-photo">
+      <img id ="my-photo" src ="photo/profil.jpg" alt ="Profil photo">
+    </div>
+    <!-- div above for photo container -->
+      <h1 class ="my-name">
+        Thierno Diallo - Web Developer
+      </h1>
+      <h3 class ="my-sentence">
+        I Love Programming !
+      </h3>
+  </div>
+
+      <div class ="parent-container">
+          <div class ="sections" id ="introduction">
+            <p class ="p-title">Introduction</p>
+            <p>My name is Thierno Diallo, and I am currently a Lambda school student, studying full stack web development. Prior to joing Lambda school, I had an Associate Degree in Computer Science from LaGuardia Community College, and I have studied at New York University for two semesters pursuing a Bachelor's Degree in Information Systems Management, where I dropped out from financial reasons. Far from giving up, I am now at Lambda school in full stack web dev track. I am very passionate about programming and I am always on my feet ready to break the barriers to reach my goals, because I believe that the sky is the limit. For all these among other things, I believe I am an ideal candidate to hire.'</p>
+          </div>
+          <div class ="sections" id ="Skills">
+            <p class ="p-title">Skills</p>
+            <p> In terms of skills, I have an intermediate level in some backend languages including c++ and java, and for the front end, I now, know   HTML5 and CSS3, and I am on my way to complete that by learning java script. I have also some knowledge of mySQL in designing data bases. In addition to those, I am profiscient in some business applications including Microsoft word and Excel, as well as Power point and outlook. </p>
+          </div>
+          <div class ="sections" id ="Work-history">
+            <p class ="p-title"> Work History</p>
+            <p class ="p-content">While studying at LaGuardia Community College, I worked as a Peer Advisor. In the position, I was responsible to Provid support to fellow students in planning their academic structure in curriculum through one on one meeting, to advise up to 20 students per day for good planning decisions and to share my knowledge of LaGuardia’s advising system, process and culture by providing to walk-ins as needed. Futhermore, I connected students to relevant campus resources for student retention and succes. I also collaborated with faculty advisors to plan and organize events and information sessions to promote student engagement. </p>
+           
+          </div>
+          <div class ="sections" id ="Contact">
+             <p class ="p-title"> Contact</p>
+            <p>I am open and ready to start my career as web developper and if you would like to learn more about me, please do not hesitate to reach out to me by email at <a href ="mailto:thiernodiallo864@gmail.com">thiernodiallo864@gmail.com </a> or by phone at + 1 347 613 7781.</p>
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- 
+  This is the footer
+ -->
+  <footer>
+      <a class="footer" href ="#Introduction">Introduction</a>
+      <a  href ="#Skills">Skills</a>
+      <a  href ="#Work-history">Whork History</a>
+      <a  href ="#Contact">Contact</a>
+  </footer>
 </body>
 </html>
+
+
+
+
+<!-- 
+  ## Task 3: Project Objectives
+
+* [ ] Review the [example resume](resume-example.png).  Notice how simplistic the example resume is.  Develop a simple layout of your choosing. If you are struggling to be creative, you may use the example resume as your design file. 
+**Note: you are only required to build one page, anything more than that would be stretch.**
+* [ ] The resume content will be provided by you. The content can be about you or a fictional character.  
+* [ ] Content: Navigation - Build a simple navigation with 4 items of your choosing
+* [ ] Content: Intro - Have a short introduction as to why you would be a good hire
+* [ ] Content: Skills - Showcase a list of skills you have somewhere on your resume
+* [ ] Content: Work History - Showcase your work history somewhere on your resume
+* [ ] Content: Contact - Provide some way a potential employer could contact you.  Phone number, email, or a full on contact form (doesn't have to work)
+* [ ] Variables: Incorporate variables in your project for color and font stacks.  
+* [ ] Nesting: Every selector should be nested inside the main container.  Avoid having global styles unless they are element level.
+* [ ] Mixins: Create 2 mixins of your choosing. Hint: It's super helpful to use flexbox properties in mixins
+* [ ] Mobile: Use nested-at rules to provide a mobile version of your resume.  Use `500px` as a `max-width` for mobile. 
+
+## Stretch Goals: 
+* [ ] Incorporate a google font of your choosing
+* [ ] Convert the great idea CSS into LESS.  Introduce variables, mixins, nesting, etc. 
+* [ ] Create a link to the portfolio page and create a layout that would allow users to see your work.  A good idea is to link projects back to their github repos so employers can see your code.
+
+ -->

@@ -1,1 +1,249 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 3%;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Work Sans', sans-serif;
+}
+body .resume-title {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  font-size: 3rem;
+}
+body nav {
+  display: flex;
+  padding: 30px;
+  width: 100%;
+  justify-content: flex-end;
+}
+body nav a {
+  align-items: baseline;
+  margin: 20px;
+}
+body nav a:hover {
+  color: white;
+  background: blue;
+  font-size: 3rem;
+}
+body .grand-parent-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f4f5f0;
+}
+body .grand-parent-container .parent-container-photo {
+  margin: 20px;
+}
+body .grand-parent-container .parent-container-photo #my-photo {
+  width: 350px;
+  height: 300px;
+}
+body .grand-parent-container .my-name {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 5rem;
+  margin: 15px;
+  color: blue;
+}
+body .grand-parent-container .my-sentence {
+  margin: 10px;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+}
+body .parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .parent-container .p-title {
+  width: fit-content;
+  font-size: 3rem;
+  margin: 5px;
+  color: blue;
+}
+body .parent-container .p-title:hover {
+  color: white;
+  background: blue;
+  font-size: 3rem;
+}
+body .parent-container .sections {
+  border: 1px dotted gray;
+  width: 49.5%;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+body footer {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  background: #f0f6fa;
+  margin-top: 10px;
+}
+body footer a {
+  margin: 10px;
+}
+/*
+## Task 3: Project Objectives
+
+* [ ] Review the [example resume](resume-example.png).  Notice how simplistic the example resume is.  Develop a simple layout of your choosing. If you are struggling to be creative, you may use the example resume as your design file. 
+**Note: you are only required to build one page, anything more than that would be stretch.**
+* [ ] The resume content will be provided by you. The content can be about you or a fictional character.  
+* [ ] Content: Navigation - Build a simple navigation with 4 items of your choosing
+* [ ] Content: Intro - Have a short introduction as to why you would be a good hire
+* [ ] Content: Skills - Showcase a list of skills you have somewhere on your resume
+* [ ] Content: Work History - Showcase your work history somewhere on your resume
+* [ ] Content: Contact - Provide some way a potential employer could contact you.  Phone number, email, or a full on contact form (doesn't have to work)
+* [ ] Variables: Incorporate variables in your project for color and font stacks.  
+* [ ] Nesting: Every selector should be nested inside the main container.  Avoid having global styles unless they are element level.
+* [ ] Mixins: Create 2 mixins of your choosing. Hint: It's super helpful to use flexbox properties in mixins
+* [ ] Mobile: Use nested-at rules to provide a mobile version of your resume.  Use `500px` as a `max-width` for mobile. 
+
+## Stretch Goals: 
+* [ ] Incorporate a google font of your choosing
+* [ ] Convert the great idea CSS into LESS.  Introduce variables, mixins, nesting, etc. 
+* [ ] Create a link to the portfolio page and create a layout that would allow users to see your work.  A good idea is to link projects back to their github repos so employers can see your code.
+
+*/
