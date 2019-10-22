@@ -148,10 +148,10 @@ body {
 }
 body nav {
   display: flex;
-  padding: 30px;
+  padding: 20px;
   width: 100%;
   justify-content: flex-end;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
   body nav {
@@ -166,6 +166,11 @@ body nav a {
   align-items: baseline;
   margin: 1%;
   text-decoration: none;
+  background: #13c749;
+  border-radius: 12px;
+  width: fit-content;
+  height: fit-content;
+  padding: 2%;
 }
 body nav a:hover {
   color: white;
@@ -205,7 +210,7 @@ body .grand-parent-container .my-name {
     color: blue;
   }
 }
-body .my-sentence {
+body .grand-parent-container .my-sentence {
   margin: 10px;
   font-family: 'Exo 2', sans-serif;
   font-family: 'Dancing Script', cursive;
@@ -213,18 +218,18 @@ body .my-sentence {
   color: blue;
 }
 @media (max-width: 500px) {
-  body .my-sentence {
+  body .grand-parent-container .my-sentence {
     font-size: 1.5rem;
     color: green;
   }
 }
-.parent-container {
+body .parent-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .parent-container {
+  body .parent-container {
     font-size: 2rem;
     width: 94%;
     flex-direction: column;
@@ -233,32 +238,33 @@ body .my-sentence {
     align-items: center;
   }
 }
-.parent-container .p-title {
+body .parent-container .p-title {
   width: fit-content;
   font-size: 3rem;
   margin: 5px;
   color: black;
 }
 @media (max-width: 500px) {
-  .parent-container .p-title {
+  body .parent-container .p-title {
     width: 94%;
     font-size: 3rem;
   }
 }
-.parent-container .p-title:hover {
+body .parent-container .p-title:hover {
   color: white;
   background: black;
   font-size: 3rem;
 }
-.parent-container .sections {
+body .parent-container .sections {
   border: 1px dotted gray;
   width: 49.5%;
   margin-top: 10px;
   padding: 5px;
   font-size: 1.5rem;
+  border-radius: 12px;
 }
 @media (max-width: 500px) {
-  .parent-container .sections {
+  body .parent-container .sections {
     width: 94%;
     font-size: 1.5rem;
     flex-direction: column;
@@ -267,22 +273,22 @@ body .my-sentence {
     border-bottom: 1px dotted gray;
   }
 }
-footer {
+body #the-footer {
   display: flex;
-  padding: 30px;
+  padding: 20px;
   justify-content: center;
-  background: #f0f6fa;
+  background: #eeeff0;
   margin-top: 10px;
-  font-size: 1.5rem;
-}
-footer a {
-  margin: 10px;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
-  footer {
+  body #the-footer {
     font-size: 3rem;
-    color: blue;
+    color: #fbfbfd;
     flex-direction: column;
     align-items: center;
   }
+}
+body #the-footer a {
+  margin: 10px;
 }
