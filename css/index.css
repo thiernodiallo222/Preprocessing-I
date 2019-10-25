@@ -1,1 +1,299 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 3%;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Work Sans', sans-serif;
+}
+body nav {
+  display: flex;
+  padding: 20px;
+  color: black;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  body nav {
+    font-size: 3rem;
+    color: blue;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+  }
+}
+body nav a {
+  align-items: baseline;
+  margin-left: 1.5%;
+  text-decoration: none;
+  background: lightgray;
+  border-radius: 12px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.5%;
+  color: rgba(196, 18, 18, 0.932);
+  align-items: center;
+}
+body nav a:hover {
+  color: white;
+  background: black;
+  font-size: 3rem;
+}
+body .grand-parent-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f4f5f0;
+}
+body .grand-parent-container .parent-container-photo {
+  margin: 20px;
+}
+body .grand-parent-container .parent-container-photo #my-photo {
+  height: 350px;
+  width: 350px;
+}
+@media (max-width: 500px) {
+  body .grand-parent-container .parent-container-photo #my-photo {
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .grand-parent-container .my-name {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 5rem;
+  margin: 15px;
+  color: black;
+}
+@media (max-width: 500px) {
+  body .grand-parent-container .my-name {
+    font-size: 3rem;
+    color: blue;
+  }
+}
+body .grand-parent-container .my-sentence {
+  margin: 10px;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: blue;
+}
+@media (max-width: 500px) {
+  body .grand-parent-container .my-sentence {
+    font-size: 1.5rem;
+    color: green;
+  }
+}
+body .parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  body .parent-container {
+    font-size: 2rem;
+    width: 94%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .parent-container .p-title {
+  width: fit-content;
+  font-size: 3rem;
+  margin: 5px;
+  color: black;
+}
+@media (max-width: 500px) {
+  body .parent-container .p-title {
+    width: 94%;
+    font-size: 3rem;
+  }
+}
+body .parent-container .p-title:hover {
+  color: white;
+  background: black;
+  font-size: 3rem;
+}
+body .parent-container .sections {
+  border: 1px dotted gray;
+  width: 49.5%;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+@media (max-width: 500px) {
+  body .parent-container .sections {
+    width: 94%;
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 2%;
+    border: none;
+    border-bottom: 1px dotted gray;
+  }
+}
+body #the-footer {
+  display: flex;
+  padding: 20px;
+  color: black;
+  justify-content: center;
+  background: #eeeff0;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  body #the-footer {
+    font-size: 3rem;
+    color: #fbfbfd;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body #the-footer a {
+  margin: 10px;
+  color: black;
+}
